@@ -1,0 +1,28 @@
+<section class="drawer" id="drawer-name" data-drawer-target>
+  <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+  <div class="drawer__wrapper">
+    <div class="drawer__header">
+      <div class="drawer__title">
+        Continue Shopping
+        <span id="drawer__item-count"></span>
+      </div>
+      <button class="drawer__close" data-drawer-close aria-label="Close Drawer"></button>
+    </div>
+    <div class="drawer__content" id="cart__drawer">
+      <div id="cart__drawer_items">
+      </div>
+    </div>
+    <div class="drawer__footer">
+      <div class="cart__shipping">
+        <span>Shipping</span>
+        <span>FREE</span>
+      </div>
+      <div class="cart__price">
+        <span>Subtotal</span>
+        <span id="cart__total_price"></span>
+      </div>
+      <a id="cart__checkout_btn" href="/checkout" class="btn btn--has-icon-after cart__continue-btn" style="width:100%;">Checkout</a>
+    </div>
+  </div>
+</section>
+<script defer type="module" src="{{ "ajax-cart-side.bundle.js" | asset_url }}"></script>
